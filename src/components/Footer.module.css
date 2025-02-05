@@ -1,0 +1,21 @@
+.footer {
+  background: var(--background);
+  color: var(--text);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: 2px solid var(--accent);
+}
+
+.footerContent p {
+  margin: 5px 0;
+}
+
+.footerContent a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footerContent a:hover {
+  text-decoration: underline;
+}

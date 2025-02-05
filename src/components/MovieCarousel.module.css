@@ -1,0 +1,26 @@
+.carouselContainer {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.movieCard {
+  background: var(--background);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movieCard img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.movieCard:hover {
+  transform: scale(1.05);
+}
