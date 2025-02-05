@@ -25,8 +25,8 @@ function MovieCarousel() {
                 {movies.map((movie, index) => (
                     <SwiperSlide key={index}>
                         <div className={styles.movieCard}>
-                            <img src={`/${movie.title}.jpg`} alt={movie.title} />
-                            <h3>{movie.title}</h3>
+                        <img src={movie.image} alt={movie.title} className={styles.movieImage} />
+                        <h3>{movie.title}</h3>
                             <p>Visningstider: {movie.times.join(", ")}</p>
                         </div>
                     </SwiperSlide>
