@@ -12,10 +12,13 @@ function MovieCarousel() {
             <h2>Kinoaktuelle Filmer</h2>
             <Swiper
                 modules={[Navigation, Pagination]}
-                navigation
-                pagination={{ clickable: true }}
+                navigation = {{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }}
+                pagination={{ el: '.swiper-pagination', clickable: true }}
                 spaceBetween={20}
                 slidesPerView={3}
+                slidesPerGroup={3}
+                loop={true}
+                loopfillgroupwithblank="true"
                 breakpoints={{
                     320: { slidesPerView: 1 },
                     768: { slidesPerView: 2 },
@@ -28,6 +31,7 @@ function MovieCarousel() {
                         <img src={movie.image} alt={movie.title} className={styles.movieImage} />
                         <h3>{movie.title}</h3>
                             <p>Visningstider: {movie.times.join(", ")}</p>
+                            <p>Hall: {movie.hall}</p>
                         </div>
                     </SwiperSlide>
                 ))}

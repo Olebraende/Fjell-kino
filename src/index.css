@@ -1,19 +1,35 @@
 :root {
   --background: #ffffff;
   --text: #000000;
-  --accent: #ff4500;
-}
-
-.light {
-  --background: #ffffff;
-  --text: #000000;
-  --accent: #ff4500;
+  --accent: #ff4500; /* Oransje */
 }
 
 .dark {
-  --background: #1e1e1e;
+  --background: #121212;
   --text: #ffffff;
   --accent: #ff9800;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar,
+.footer,
+.menu {
+  background: var(--background);
+  color: var(--text);
+}
+
+button {
+  background: var(--accent);
+  color: white;
+}
+
+button:hover {
+  background: #e63900;
 }
 
 .color-blind {
