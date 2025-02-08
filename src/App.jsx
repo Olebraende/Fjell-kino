@@ -8,6 +8,7 @@ import UpcomingMovies from "./pages/UpcomingMovies";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Booking from "./pages/Booking";
+import AccessibilityMenu from "./components/AccessibilityMenu";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <ThemeProvider>
             <Router>
                 <Navbar />
+                <AccessibilityMenu />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/movies" element={<Movies />} />

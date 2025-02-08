@@ -2,8 +2,8 @@
   background: var(--background);
   color: var(--text);
   text-align: center;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 3em;
+  margin-top: 15em;
   border-top: 2px solid var(--accent);
 }
 
