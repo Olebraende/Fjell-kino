@@ -8,7 +8,9 @@ function Navbar() {
 
     return (
         <nav className={styles.navbar}>
-            <h1>🎬 Fjell Kino</h1>
+            <Link to="/">
+                <img src="/images/logo.webp" alt="Fjell Kino Logo" className={styles.logo} />
+            </Link>
             <ul className={styles.navLinks}>
                 <li><Link to="/">Hjem</Link></li>
                 <li><Link to="/movies">Filmer</Link></li>

@@ -12,6 +12,12 @@
   font-size: 1.8rem;
 }
 
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+
 .navLinks {
   list-style: none;
   display: flex;
